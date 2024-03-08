@@ -1,0 +1,29 @@
+{
+  "name": "lawfirm",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sameersheikh2/LawFirm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sameersheikh2/LawFirm/issues"
+  },
+  "homepage": "https://github.com/sameersheikh2/LawFirm#readme",
+  "dependencies": {
+    "@parcel/transformer-svg-react": "^2.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  }
+}
