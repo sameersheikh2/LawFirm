@@ -50,7 +50,7 @@ const Card = ({ imageSource, type }) => {
     return (
       <Card
         sx={{
-          maxWidth: 345,
+          //   maxWidth: 345,
           backgroundColor: "black",
           border: "1px solid white",
           borderRadius: "10px",
