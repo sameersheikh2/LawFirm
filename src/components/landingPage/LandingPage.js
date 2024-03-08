@@ -5,7 +5,7 @@ import Hero from "../Hero/Hero";
 const LandingPage = () => {
   return (
     <>
-      <div className="bg-colorBlack h-[100%] text-white">
+      <div className="bg-colorBlack h-max text-white">
         <Header />
         <Hero />
       </div>

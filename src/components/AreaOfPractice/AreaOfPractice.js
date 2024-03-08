@@ -8,7 +8,7 @@ import ElderAbuse from "../../assets/gridImage/ElderAbuse.png";
 
 const AreaOfPractice = () => {
   return (
-    <div className="flex mt-6 justify-center items-center">
+    <div className="flex mt-16 justify-center items-center">
       <div className="w-4/5  flex flex-col items-center justify-center mx-auto">
         <h1 className="text-secondary my-16 font-semibold text-white">
           Area of Practices

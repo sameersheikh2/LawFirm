@@ -5,7 +5,7 @@ import Features from "./Features/Features";
 const Attorneys = () => {
   return (
     <>
-      <div className="h-[100vh] flex flex-col justify-between items-center">
+      <div className="h-max flex flex-col justify-between items-center">
         <Introduction />
         <Features />
       </div>

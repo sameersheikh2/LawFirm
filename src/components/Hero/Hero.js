@@ -3,7 +3,7 @@ import heroImage from "../../assets/heroImg.png";
 
 const Hero = () => {
   return (
-    <section className="flex justify-center items-center mt-1">
+    <section className="flex justify-center flex-wrap items-center mt-1 pb-[9rem]">
       <div className="w-full flex gap-6 justify-center flex-wrap items-center">
         <div className="flex flex-column flex-wrap w-[50%]">
           <h1 className="font-medium text-[66px]">You don’t have to </h1>
@@ -22,7 +22,7 @@ const Hero = () => {
               placeholder="Enter your email address"
             />
             <button
-              className="bg-yellow-300 font-semibold text-base text-black bg-opacity-[90%] rounded-full py-3 px-6"
+              className="bg-colorYellow font-semibold text-base text-black  rounded-full py-3 px-6"
               type="button"
             >
               Let's talk
