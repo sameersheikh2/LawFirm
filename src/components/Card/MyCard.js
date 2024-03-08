@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 
-const Card = ({ imageSource, type }) => {
+const MyCard = ({ imageSource, type }) => {
   if (type === "features") {
     return (
       <Card
@@ -86,4 +86,4 @@ const Card = ({ imageSource, type }) => {
     );
 };
 
-export default Card;
+export default MyCard;
