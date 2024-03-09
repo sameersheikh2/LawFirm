@@ -8,7 +8,15 @@ import {
   Typography,
 } from "@mui/material";
 
-const MyCard = ({ imageSource, type, title, description }) => {
+const MyCard = ({
+  active,
+  index,
+  imageSource,
+  type,
+  name,
+  title,
+  description,
+}) => {
   if (type === "features") {
     return (
       <Card
@@ -32,7 +40,7 @@ const MyCard = ({ imageSource, type, title, description }) => {
                 width: "101px",
                 height: "101px",
               }}
-              aria-label="recipe"
+              aria-label={title}
               src={imageSource}
             />
           }
@@ -79,36 +87,65 @@ const MyCard = ({ imageSource, type, title, description }) => {
     return (
       <Card
         sx={{
-          //   maxWidth: 345,
-          backgroundColor: "black",
-          border: "1px solid white",
+          maxWidth: "359px",
+          maxHeight: "397px",
+          cursor: "pointer",
+          // backgroundColor: "#1D1D1D",
+          border: "1.4px solid #FFFFFF1A",
           borderRadius: "10px",
+          backgroundColor: index === active ? "#2E2E2E" : "#1D1D1D",
           "&:hover": {
             backgroundColor: "#2E2E2E",
           },
         }}
       >
         <CardHeader
+          sx={{ marginTop: "10px" }}
           avatar={
             <Avatar
               sx={{
                 bgcolor: "#191919",
-                width: 56,
-                height: 56,
+                width: "101px",
+                height: "101px",
               }}
-              aria-label="recipe"
+              aria-label={title}
               src={imageSource}
             />
           }
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
+          <Typography
+            sx={{ fontSize: "24px", fontWeight: "600", color: "white" }}
+            gutterBottom
+            variant="h5"
+            component="div"
+          >
+            {name}
           </Typography>
-          <Typography variant="body2" sx={{ color: "white" }}>
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
+          <Typography
+            sx={{
+              fontSize: "14px",
+              fontWeight: "400",
+              marginBottom: "20px",
+              color: "white",
+            }}
+            gutterBottom
+            variant="h5"
+            component="div"
+          >
+            {title}
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              fontSize: "18px",
+              fontWeight: "500",
+              opacity: "30%",
+              color: "white",
+              marginBottom: "20px",
+            }}
+          >
+            {description}
           </Typography>
         </CardContent>
       </Card>
