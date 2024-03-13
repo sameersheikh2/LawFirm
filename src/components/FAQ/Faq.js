@@ -5,7 +5,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 
-const FAQ = () => {
+const Faq = () => {
   return (
     <div className="flex mt-16 justify-center">
       <div className="w-4/5">
@@ -156,4 +156,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default Faq;
