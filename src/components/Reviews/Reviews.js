@@ -34,6 +34,7 @@ const Reviews = () => {
         <div className="flex gap-4">
           {clientData.map((client, index) => (
             <MyCard
+              key={client.id}
               active={isActive}
               title={client.title}
               name={client.name}
